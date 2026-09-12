@@ -23,7 +23,9 @@ body {
     background 0.3s ease;
 }
 
-/* GLOBAL BACKGROUND */
+/* =========================
+   GLOBAL BACKGROUND
+========================= */
 
 body::before {
   content: "";
@@ -48,7 +50,9 @@ body::after {
   transition: background 0.3s ease;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar {
   position: sticky;
@@ -84,6 +88,7 @@ body::after {
 .logo img {
   height: 46px;
   width: auto;
+
   display: block;
 }
 
@@ -112,15 +117,14 @@ nav a {
     transform 0.2s ease;
 }
 
-nav a:hover {
-  color: #15947f;
-}
-
+nav a:hover,
 nav a.active {
   color: #15947f;
 }
 
-/* NAV CONTROLS */
+/* =========================
+   NAV CONTROLS
+========================= */
 
 .nav-controls {
   display: flex;
@@ -168,7 +172,9 @@ nav a.active {
   font-size: 18px;
 }
 
-/* HOME HERO */
+/* =========================
+   HOME HERO
+========================= */
 
 .hero {
   position: relative;
@@ -231,11 +237,13 @@ nav a.active {
 
 .from-top {
   transform: translateY(-220px);
+
   animation: enterTop 1.25s ease forwards;
 }
 
 .from-bottom {
   transform: translateY(220px);
+
   animation: enterBottom 1.25s ease forwards;
 }
 
@@ -306,7 +314,9 @@ nav a.active {
   }
 }
 
-/* HOME INTRO */
+/* =========================
+   HOME INTRO
+========================= */
 
 .intro {
   max-width: 950px;
@@ -350,7 +360,9 @@ nav a.active {
   line-height: 1.8;
 }
 
-/* HOME CARDS */
+/* =========================
+   HOME CARDS
+========================= */
 
 .cards {
   max-width: 1150px;
@@ -416,7 +428,9 @@ nav a.active {
   line-height: 1.7;
 }
 
-/* STANDARD PAGE */
+/* =========================
+   STANDARD PAGES
+========================= */
 
 .page {
   min-height: calc(100vh - 76px);
@@ -451,7 +465,9 @@ nav a.active {
   line-height: 1.8;
 }
 
-/* INFO GRID */
+/* =========================
+   INFO GRID
+========================= */
 
 .content-grid {
   max-width: 1150px;
@@ -501,7 +517,9 @@ nav a.active {
   color: #5d6c7b;
 }
 
-/* ABOUT ME */
+/* =========================
+   ABOUT ME
+========================= */
 
 .about-layout {
   max-width: 1150px;
@@ -556,7 +574,9 @@ nav a.active {
   font-weight: 600;
 }
 
-/* PROJECT DIARY */
+/* =========================
+   PROJECT DIARY
+========================= */
 
 .timeline {
   position: relative;
@@ -636,7 +656,9 @@ nav a.active {
   color: #5d6c7b;
 }
 
-/* REFLECTION */
+/* =========================
+   REFLECTION CARDS
+========================= */
 
 .reflection-layout {
   max-width: 1100px;
@@ -667,7 +689,45 @@ nav a.active {
   color: #5d6c7b;
 }
 
-/* DARK MODE */
+/* =========================
+   SOON PAGES
+========================= */
+
+.soon-page {
+  min-height: calc(100vh - 76px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 40px;
+}
+
+.soon-page h1 {
+  color: #071f62;
+
+  font-size: clamp(70px, 12vw, 150px);
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -4px;
+}
+
+.soon-page p {
+  margin-top: 22px;
+
+  color: #5d6c7b;
+
+  font-size: 18px;
+}
+
+/* =========================
+   DARK MODE
+========================= */
 
 body.dark-mode::after {
   background: rgba(4, 15, 32, 0.88);
@@ -725,11 +785,17 @@ body.dark-mode .skill-list span {
   color: #83dfd1;
 }
 
-body.dark-mode footer {
-  background: #061325;
+body.dark-mode .soon-page h1 {
+  color: white;
 }
 
-/* FOOTER */
+body.dark-mode .soon-page p {
+  color: #c7d2df;
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
   padding: 35px 20px;
@@ -742,9 +808,16 @@ footer {
   font-size: 14px;
 }
 
-/* TABLET */
+body.dark-mode footer {
+  background: #061325;
+}
+
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 1120px) {
+
   .navbar {
     padding: 15px 4%;
 
@@ -781,9 +854,12 @@ footer {
   }
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 650px) {
+
   .navbar {
     align-items: center;
   }
@@ -836,5 +912,9 @@ footer {
   .timeline-content,
   .reflection-card {
     padding: 25px;
+  }
+
+  .soon-page h1 {
+    font-size: 70px;
   }
 }
