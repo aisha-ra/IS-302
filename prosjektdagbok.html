@@ -11,89 +11,151 @@
 
 <body>
 
-  <header class="navbar">
-    <a href="index.html" class="logo">
-  <img src="logo.jpg" alt="Varodd logo">
-</a>
+<header class="navbar">
 
-    <nav>
-      <a href="index.html">Hjem</a>
-      <a href="om-varodd.html">Om Varodd</a>
-      <a href="oppgaver.html">Oppgaver</a>
-      <a href="om-meg.html">Om meg</a>
-      <a href="prosjektdagbok.html" class="active">Prosjektdagbok</a>
-      <a href="status1.html">Status 1</a>
-      <a href="status2.html">Status 2</a>
-      <a href="refleksjon.html">Refleksjon</a>
-    </nav>
-  </header>
+  <a href="index.html" class="logo">
+    <img src="logo.jpg" alt="Varodd">
+  </a>
 
-  <main class="page">
+  <nav>
+    <a href="index.html" data-no="Hjem" data-en="Home">Hjem</a>
+    <a href="om-varodd.html" data-no="Om Varodd" data-en="About Varodd">Om Varodd</a>
+    <a href="oppgaver.html" data-no="Oppgaver" data-en="Tasks">Oppgaver</a>
+    <a href="om-meg.html" data-no="Om meg" data-en="About me">Om meg</a>
+    <a href="prosjektdagbok.html" class="active"
+       data-no="Prosjektdagbok"
+       data-en="Project diary">Prosjektdagbok</a>
+    <a href="status1.html">Status 1</a>
+    <a href="status2.html">Status 2</a>
+    <a href="refleksjon.html" data-no="Refleksjon" data-en="Reflection">Refleksjon</a>
+  </nav>
 
-    <section class="page-hero">
-      <p class="eyebrow">PROSJEKTDAGBOK</p>
+  <div class="nav-controls">
+    <button id="languageBtn" class="nav-control">EN</button>
+    <button id="themeBtn" class="nav-control theme-btn">☾</button>
+  </div>
 
-      <h1>Utviklingen gjennom praksisperioden</h1>
+</header>
 
-      <p class="page-intro">
-        Her dokumenterer jeg hva jeg jobber med underveis i praksisperioden,
-        hva jeg lærer og hvordan prosjektet utvikler seg.
-      </p>
-    </section>
+<main class="page">
 
-    <section class="timeline">
+  <section class="page-hero">
 
-      <article class="timeline-item">
-        <div class="timeline-marker"></div>
+    <p class="eyebrow"
+       data-no="PROSJEKTDAGBOK"
+       data-en="PROJECT DIARY">
+      PROSJEKTDAGBOK
+    </p>
 
-        <div class="timeline-content">
-          <span class="timeline-date">Uke 1</span>
+    <h1
+      data-no="Utviklingen gjennom praksisperioden"
+      data-en="Development throughout the internship">
+      Utviklingen gjennom praksisperioden
+    </h1>
 
-          <h2>Oppstart og bli kjent med Varodd</h2>
+    <p class="page-intro"
+       data-no="Her dokumenterer jeg hva jeg jobber med, hva jeg lærer og hvordan prosjektet utvikler seg."
+       data-en="Here I document what I work on, what I learn and how the project develops.">
+      Her dokumenterer jeg utviklingen gjennom praksisen.
+    </p>
 
-          <p>
-            SOON..
-          </p>
-        </div>
-      </article>
+  </section>
 
-      <article class="timeline-item">
-        <div class="timeline-marker"></div>
+  <section class="timeline">
 
-        <div class="timeline-content">
-          <span class="timeline-date">Uke 2</span>
+    <article class="timeline-item">
 
-          <h2>Kartlegging av oppgaver</h2>
+      <div class="timeline-marker"></div>
 
-          <p>
-            SOON..
-          </p>
-        </div>
-      </article>
+      <div class="timeline-content">
 
-      <article class="timeline-item">
-        <div class="timeline-marker"></div>
+        <span class="timeline-date"
+              data-no="Uke 1"
+              data-en="Week 1">
+          Uke 1
+        </span>
 
-        <div class="timeline-content">
-          <span class="timeline-date">Videre</span>
+        <h2
+          data-no="Oppstart"
+          data-en="Getting started">
+          Oppstart
+        </h2>
 
-          <h2>Utvikling og forbedring</h2>
+        <p
+          data-no="Jeg ble kjent med Varodd, arbeidsmiljøet og oppgavene jeg skal jobbe med."
+          data-en="I became familiar with Varodd, the working environment and the tasks I will be working on.">
+          Jeg ble kjent med Varodd og arbeidsoppgavene.
+        </p>
 
-          <p>
-            SOON..
-          </p>
-        </div>
-      </article>
+      </div>
 
-    </section>
+    </article>
 
-  </main>
+    <article class="timeline-item">
 
-  <footer>
-    <p>Aisha · IS-302 · Universitetet i Agder</p>
-  </footer>
+      <div class="timeline-marker"></div>
 
-  <script src="script.js"></script>
+      <div class="timeline-content">
+
+        <span class="timeline-date"
+              data-no="Uke 2"
+              data-en="Week 2">
+          Uke 2
+        </span>
+
+        <h2
+          data-no="Kartlegging"
+          data-en="Mapping needs">
+          Kartlegging
+        </h2>
+
+        <p
+          data-no="Jeg begynte å sette meg inn i bestillingsløsningen og forstå behovene til de ansatte."
+          data-en="I started learning about the ordering solution and understanding the employees' needs.">
+          Jeg begynte å kartlegge bestillingsløsningen.
+        </p>
+
+      </div>
+
+    </article>
+
+    <article class="timeline-item">
+
+      <div class="timeline-marker"></div>
+
+      <div class="timeline-content">
+
+        <span class="timeline-date"
+              data-no="Videre"
+              data-en="Next">
+          Videre
+        </span>
+
+        <h2
+          data-no="Utvikling og forbedring"
+          data-en="Development and improvement">
+          Utvikling og forbedring
+        </h2>
+
+        <p
+          data-no="Videre skal jeg arbeide med ideer, forbedringer og andre oppgaver som oppstår gjennom praksisperioden."
+          data-en="Next I will work with ideas, improvements and other tasks that arise during the internship period.">
+          Videre skal jeg arbeide med ideer og forbedringer.
+        </p>
+
+      </div>
+
+    </article>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Aisha · IS-302 · Universitetet i Agder</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
