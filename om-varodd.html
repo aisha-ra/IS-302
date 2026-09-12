@@ -11,84 +11,123 @@
 
 <body>
 
-  <header class="navbar">
-    <a href="index.html" class="logo">
-  <img src="logo.jpg" alt="Varodd logo">
-</a>
+<header class="navbar">
 
-    <nav>
-      <a href="index.html">Hjem</a>
-      <a href="om-varodd.html" class="active">Om Varodd</a>
-      <a href="oppgaver.html">Oppgaver</a>
-      <a href="om-meg.html">Om meg</a>
-      <a href="prosjektdagbok.html">Prosjektdagbok</a>
-      <a href="status1.html">Status 1</a>
-      <a href="status2.html">Status 2</a>
-      <a href="refleksjon.html">Refleksjon</a>
-    </nav>
-  </header>
+  <a href="index.html" class="logo">
+    <img src="logo.jpg" alt="Varodd">
+  </a>
 
-  <main class="page">
+  <nav>
+    <a href="index.html" data-no="Hjem" data-en="Home">Hjem</a>
+    <a href="om-varodd.html" class="active"
+       data-no="Om Varodd"
+       data-en="About Varodd">Om Varodd</a>
+    <a href="oppgaver.html" data-no="Oppgaver" data-en="Tasks">Oppgaver</a>
+    <a href="om-meg.html" data-no="Om meg" data-en="About me">Om meg</a>
+    <a href="prosjektdagbok.html"
+       data-no="Prosjektdagbok"
+       data-en="Project diary">Prosjektdagbok</a>
+    <a href="status1.html">Status 1</a>
+    <a href="status2.html">Status 2</a>
+    <a href="refleksjon.html"
+       data-no="Refleksjon"
+       data-en="Reflection">Refleksjon</a>
+  </nav>
 
-    <section class="page-hero">
-      <p class="eyebrow">VARODD INKLUDERING</p>
+  <div class="nav-controls">
+    <button id="languageBtn" class="nav-control">EN</button>
+    <button id="themeBtn" class="nav-control theme-btn">☾</button>
+  </div>
 
-      <h1>Om Varodd</h1>
+</header>
 
-      <p class="page-intro">
-        Varodd Inkludering er en arbeids- og inkluderingsbedrift som jobber
-        for å skape muligheter for mennesker i arbeidslivet.
+<main class="page">
+
+  <section class="page-hero">
+
+    <p class="eyebrow">VARODD INKLUDERING</p>
+
+    <h1
+      data-no="Om Varodd"
+      data-en="About Varodd">
+      Om Varodd
+    </h1>
+
+    <p class="page-intro"
+       data-no="Varodd Inkludering er en arbeids- og inkluderingsbedrift som jobber for å skape muligheter for mennesker i arbeidslivet."
+       data-en="Varodd Inkludering is an employment and inclusion company that works to create opportunities for people in working life.">
+      Varodd Inkludering er en arbeids- og inkluderingsbedrift.
+    </p>
+
+  </section>
+
+  <section class="content-grid">
+
+    <article class="info-card">
+
+      <span class="card-number">01</span>
+
+      <h2
+        data-no="Hva gjør Varodd?"
+        data-en="What does Varodd do?">
+        Hva gjør Varodd?
+      </h2>
+
+      <p
+        data-no="Varodd Inkludering arbeider med oppfølging, kompetanseutvikling og arbeidsinkludering. Målet er å skape flere muligheter for mennesker i arbeidslivet."
+        data-en="Varodd Inkludering works with follow-up, competence development and employment inclusion. The goal is to create more opportunities for people in working life.">
+        Varodd arbeider med oppfølging, kompetanseutvikling og
+        arbeidsinkludering.
       </p>
-    </section>
 
-    <section class="content-grid">
+    </article>
 
-      <article class="info-card">
-        <span class="card-number">01</span>
+    <article class="info-card">
 
-        <h2>Hva gjør Varodd?</h2>
+      <span class="card-number">02</span>
 
-        <p>
-          Varodd Inkludering arbeider med oppfølging, kompetanseutvikling
-          og arbeidsinkludering. Målet er å hjelpe mennesker med å finne
-          muligheter i arbeidslivet og skape et mer inkluderende arbeidsmiljø.
-        </p>
-      </article>
+      <h2
+        data-no="Praksisstedet mitt"
+        data-en="My internship workplace">
+        Praksisstedet mitt
+      </h2>
 
-      <article class="info-card">
-        <span class="card-number">02</span>
+      <p
+        data-no="Hos Varodd får jeg muligheten til å bli kjent med virksomheten og samtidig bidra med oppgaver innen IT, design og digitale løsninger."
+        data-en="At Varodd I get the opportunity to learn about the organisation while contributing to tasks involving IT, design and digital solutions.">
+        Hos Varodd får jeg muligheten til å bli kjent med virksomheten
+        og bidra med praktiske oppgaver.
+      </p>
 
-        <h2>Praksisstedet mitt</h2>
+    </article>
 
-        <p>
-          Jeg har praksis hos Varodd Inkludering. Her får jeg muligheten
-          til å bli bedre kjent med hvordan virksomheten arbeider, samtidig
-          som jeg får bidra med oppgaver innen IT, design og digitale løsninger.
-        </p>
-      </article>
+    <article class="info-card">
 
-      <article class="info-card">
-        <span class="card-number">03</span>
+      <span class="card-number">03</span>
 
-        <h2>Hvorfor Varodd?</h2>
+      <h2
+        data-no="Hvorfor Varodd?"
+        data-en="Why Varodd?">
+        Hvorfor Varodd?
+      </h2>
 
-        <p>
-          Jeg synes Varodd er et interessant praksissted fordi virksomheten
-          kombinerer mennesker, arbeid, teknologi og utvikling. Det gir meg
-          muligheten til å bruke interessen min for IT og design i et ekte
-          arbeidsmiljø.
-        </p>
-      </article>
+      <p
+        data-no="Jeg synes Varodd er et interessant praksissted fordi virksomheten kombinerer mennesker, arbeid, teknologi og utvikling."
+        data-en="I find Varodd an interesting internship workplace because the organisation combines people, employment, technology and development.">
+        Varodd kombinerer mennesker, arbeid, teknologi og utvikling.
+      </p>
 
-    </section>
+    </article>
 
-  </main>
+  </section>
 
-  <footer>
-    <p>Aisha · IS-302 · Universitetet i Agder</p>
-  </footer>
+</main>
 
-  <script src="script.js"></script>
+<footer>
+  <p>Aisha · IS-302 · Universitetet i Agder</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
