@@ -3,97 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Status 1</title>
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header class="navbar">
-    <a href="index.html" class="logo">
-  <img src="logo.jpg" alt="Varodd logo">
-</a>
+<header class="navbar">
 
-    <nav>
-      <a href="index.html">Hjem</a>
-      <a href="om-varodd.html">Om Varodd</a>
-      <a href="oppgaver.html">Oppgaver</a>
-      <a href="om-meg.html">Om meg</a>
-      <a href="prosjektdagbok.html">Prosjektdagbok</a>
-      <a href="status1.html" class="active">Status 1</a>
-      <a href="status2.html">Status 2</a>
-      <a href="refleksjon.html">Refleksjon</a>
-    </nav>
-  </header>
+  <a href="index.html" class="logo">
+    <img src="logo.jpg" alt="Varodd">
+  </a>
 
-  <main class="page">
+  <nav>
+    <a href="index.html" data-no="Hjem" data-en="Home">Hjem</a>
+    <a href="om-varodd.html" data-no="Om Varodd" data-en="About Varodd">Om Varodd</a>
+    <a href="oppgaver.html" data-no="Oppgaver" data-en="Tasks">Oppgaver</a>
+    <a href="om-meg.html" data-no="Om meg" data-en="About me">Om meg</a>
+    <a href="prosjektdagbok.html" data-no="Prosjektdagbok" data-en="Project diary">Prosjektdagbok</a>
+    <a href="status1.html" class="active">Status 1</a>
+    <a href="status2.html">Status 2</a>
+    <a href="refleksjon.html" data-no="Refleksjon" data-en="Reflection">Refleksjon</a>
+  </nav>
 
-    <section class="page-hero">
-      <p class="eyebrow">STATUS 1</p>
+  <div class="nav-controls">
+    <button id="languageBtn" class="nav-control">EN</button>
+    <button id="themeBtn" class="nav-control theme-btn">☾</button>
+  </div>
 
-      <h1>Første statusoppdatering</h1>
+</header>
 
-      <p class="page-intro">
-        Her oppsummerer jeg hva jeg har gjort så langt i praksisperioden,
-        hva jeg har lært og hva jeg skal jobbe videre med.
-      </p>
-    </section>
+<main class="soon-page">
+  <h1 data-no="SOON..." data-en="SOON...">SOON...</h1>
 
-    <section class="content-grid">
+  <p
+    data-no="Denne siden kommer snart."
+    data-en="This page is coming soon.">
+    Denne siden kommer snart.
+  </p>
+</main>
 
-      <article class="info-card">
-        <span class="card-number">01</span>
-
-        <h2>Hva jeg har gjort</h2>
-
-        <p>
-          SOON..
-        </p>
-
-        <p>
-          SOON..
-        </p>
-      </article>
-
-      <article class="info-card">
-        <span class="card-number">02</span>
-
-        <h2>Hva jeg har lært</h2>
-
-        <p>
-          SOON..
-        </p>
-
-        <p>
-          SOON..
-        </p>
-      </article>
-
-      <article class="info-card">
-        <span class="card-number">03</span>
-
-        <h2>Veien videre</h2>
-
-        <p>
-          SOON..
-        </p>
-
-        <p>
-          SOON..
-        </p>
-      </article>
-
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Aisha · IS-302 · Universitetet i Agder</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
