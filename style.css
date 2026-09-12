@@ -66,7 +66,7 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("images/varodd.jpg");
+  background-image: url("varodd.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
