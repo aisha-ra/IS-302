@@ -11,116 +11,177 @@
 
 <body>
 
-  <header class="navbar">
-    <a href="index.html" class="logo">
-  <img src="logo.jpg" alt="Varodd logo">
-</a>
+<header class="navbar">
 
-    <nav>
-      <a href="index.html" class="active">Hjem</a>
-      <a href="om-varodd.html">Om Varodd</a>
-      <a href="oppgaver.html">Oppgaver</a>
-      <a href="om-meg.html">Om meg</a>
-      <a href="prosjektdagbok.html">Prosjektdagbok</a>
-      <a href="status1.html">Status 1</a>
-      <a href="status2.html">Status 2</a>
-      <a href="refleksjon.html">Refleksjon</a>
-    </nav>
-  </header>
+  <a href="index.html" class="logo">
+    <img src="logo.jpg" alt="Varodd">
+  </a>
 
-  <main>
+  <nav>
+    <a href="index.html" class="active"
+       data-no="Hjem"
+       data-en="Home">Hjem</a>
 
-    <!-- HERO -->
-    <section class="hero">
+    <a href="om-varodd.html"
+       data-no="Om Varodd"
+       data-en="About Varodd">Om Varodd</a>
 
-      <div class="hero-overlay"></div>
+    <a href="oppgaver.html"
+       data-no="Oppgaver"
+       data-en="Tasks">Oppgaver</a>
 
-      <div class="hero-content">
+    <a href="om-meg.html"
+       data-no="Om meg"
+       data-en="About me">Om meg</a>
 
-        <div class="varodd-title">
-          <span class="letter from-top">V</span>
-          <span class="letter from-bottom">A</span>
-          <span class="letter from-top">R</span>
-          <span class="letter from-bottom">O</span>
-          <span class="letter from-top">D</span>
-          <span class="letter from-bottom">D</span>
-        </div>
+    <a href="prosjektdagbok.html"
+       data-no="Prosjektdagbok"
+       data-en="Project diary">Prosjektdagbok</a>
 
-        <p class="hero-subtitle">
-          Min praksis hos Varodd Inkludering
-        </p>
+    <a href="status1.html">Status 1</a>
 
-        <a href="oppgaver.html" class="hero-button">
-          Se oppgavene mine
-        </a>
+    <a href="status2.html">Status 2</a>
 
+    <a href="refleksjon.html"
+       data-no="Refleksjon"
+       data-en="Reflection">Refleksjon</a>
+  </nav>
+
+  <div class="nav-controls">
+    <button id="languageBtn"
+            class="nav-control"
+            type="button">EN</button>
+
+    <button id="themeBtn"
+            class="nav-control theme-btn"
+            type="button">☾</button>
+  </div>
+
+</header>
+
+<main>
+
+  <section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <div class="varodd-title">
+        <span class="letter from-top">V</span>
+        <span class="letter from-bottom">A</span>
+        <span class="letter from-top">R</span>
+        <span class="letter from-bottom">O</span>
+        <span class="letter from-top">D</span>
+        <span class="letter from-bottom">D</span>
       </div>
 
-    </section>
-
-    <!-- INTRO -->
-    <section class="intro">
-
-      <p class="eyebrow">IS-302 PRAKSIS</p>
-
-      <h2>Design, teknologi og praktisk erfaring</h2>
-
-      <p>
-        Jeg heter Aisha og har praksis hos Varodd Inkludering.
-        Jeg har stor interesse for IT, design og digitale løsninger.
-        Gjennom praksisperioden får jeg muligheten til å bruke interessene
-        mine i praktiske arbeidsoppgaver og samtidig lære mer om hvordan
-        digitale løsninger brukes i en virksomhet.
+      <p class="hero-subtitle"
+         data-no="Min praksis hos Varodd Inkludering"
+         data-en="My internship at Varodd Inkludering">
+        Min praksis hos Varodd Inkludering
       </p>
 
-    </section>
+      <a href="oppgaver.html"
+         class="hero-button"
+         data-no="Se oppgavene mine"
+         data-en="View my tasks">
+        Se oppgavene mine
+      </a>
 
-    <!-- OPPGAVER -->
-    <section class="cards">
+    </div>
 
-      <article class="card">
-        <span>01</span>
+  </section>
 
-        <h3>Bestillingsløsning</h3>
+  <section class="intro">
 
-        <p>
-          Jeg skal blant annet bidra til å forbedre løsningen som brukes
-          for bestillinger i kantinen, slik at den blir enklere og mer
-          oversiktlig for de ansatte.
-        </p>
-      </article>
+    <p class="eyebrow"
+       data-no="IS-302 PRAKSIS"
+       data-en="IS-302 INTERNSHIP">
+      IS-302 PRAKSIS
+    </p>
 
-      <article class="card">
-        <span>02</span>
+    <h2
+      data-no="Design, teknologi og praktisk erfaring"
+      data-en="Design, technology and practical experience">
+      Design, teknologi og praktisk erfaring
+    </h2>
 
-        <h3>Grafisk design</h3>
+    <p
+      data-no="Jeg heter Aisha og har praksis hos Varodd Inkludering. Jeg har stor interesse for IT, design og digitale løsninger. Gjennom praksisperioden får jeg muligheten til å bruke interessene mine i praktiske arbeidsoppgaver og samtidig lære mer om hvordan digitale løsninger brukes i en virksomhet."
+      data-en="My name is Aisha and I am doing my internship at Varodd Inkludering. I have a strong interest in IT, design and digital solutions. During the internship I get the opportunity to use these interests in practical work while learning more about how digital solutions are used in an organisation.">
+      Jeg heter Aisha og har praksis hos Varodd Inkludering.
+      Jeg har stor interesse for IT, design og digitale løsninger.
+    </p>
 
-        <p>
-          Jeg kan også få muligheten til å arbeide med grafisk design
-          knyttet til produkter, profilering og andre kreative oppgaver.
-        </p>
-      </article>
+  </section>
 
-      <article class="card">
-        <span>03</span>
+  <section class="cards">
 
-        <h3>Læring og samarbeid</h3>
+    <article class="card">
 
-        <p>
-          Praksisen gir meg erfaring med samarbeid, problemløsning,
-          brukerbehov og utvikling av digitale løsninger.
-        </p>
-      </article>
+      <span>01</span>
 
-    </section>
+      <h3
+        data-no="Bestillingsløsning"
+        data-en="Ordering solution">
+        Bestillingsløsning
+      </h3>
 
-  </main>
+      <p
+        data-no="Jeg skal blant annet bidra til å forbedre løsningen som brukes for bestillinger i kantinen, slik at den blir enklere og mer oversiktlig for de ansatte."
+        data-en="I will help improve the solution used for orders in the canteen so that it becomes easier and clearer for the employees.">
+        Jeg skal blant annet bidra til å forbedre løsningen som brukes
+        for bestillinger i kantinen.
+      </p>
 
-  <footer>
-    <p>Aisha · IS-302 · Universitetet i Agder</p>
-  </footer>
+    </article>
 
-  <script src="script.js"></script>
+    <article class="card">
+
+      <span>02</span>
+
+      <h3
+        data-no="Grafisk design"
+        data-en="Graphic design">
+        Grafisk design
+      </h3>
+
+      <p
+        data-no="Jeg kan også få muligheten til å arbeide med grafisk design knyttet til produkter, profilering og andre kreative oppgaver."
+        data-en="I may also get the opportunity to work with graphic design related to products, branding and other creative tasks.">
+        Jeg kan også få muligheten til å arbeide med grafisk design.
+      </p>
+
+    </article>
+
+    <article class="card">
+
+      <span>03</span>
+
+      <h3
+        data-no="Læring og samarbeid"
+        data-en="Learning and collaboration">
+        Læring og samarbeid
+      </h3>
+
+      <p
+        data-no="Praksisen gir meg erfaring med samarbeid, problemløsning, brukerbehov og utvikling av digitale løsninger."
+        data-en="The internship gives me experience with collaboration, problem solving, user needs and the development of digital solutions.">
+        Praksisen gir meg erfaring med samarbeid og problemløsning.
+      </p>
+
+    </article>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Aisha · IS-302 · Universitetet i Agder</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
