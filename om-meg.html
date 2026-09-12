@@ -11,107 +11,109 @@
 
 <body>
 
-  <header class="navbar">
-    <a href="index.html" class="logo">
-  <img src="logo.jpg" alt="Varodd logo">
-</a>
+<header class="navbar">
 
-    <nav>
-      <a href="index.html">Hjem</a>
-      <a href="om-varodd.html">Om Varodd</a>
-      <a href="oppgaver.html">Oppgaver</a>
-      <a href="om-meg.html" class="active">Om meg</a>
-      <a href="prosjektdagbok.html">Prosjektdagbok</a>
-      <a href="status1.html">Status 1</a>
-      <a href="status2.html">Status 2</a>
-      <a href="refleksjon.html">Refleksjon</a>
-    </nav>
-  </header>
+  <a href="index.html" class="logo">
+    <img src="logo.jpg" alt="Varodd">
+  </a>
 
-  <main class="page">
+  <nav>
+    <a href="index.html" data-no="Hjem" data-en="Home">Hjem</a>
+    <a href="om-varodd.html" data-no="Om Varodd" data-en="About Varodd">Om Varodd</a>
+    <a href="oppgaver.html" data-no="Oppgaver" data-en="Tasks">Oppgaver</a>
+    <a href="om-meg.html" class="active" data-no="Om meg" data-en="About me">Om meg</a>
+    <a href="prosjektdagbok.html" data-no="Prosjektdagbok" data-en="Project diary">Prosjektdagbok</a>
+    <a href="status1.html">Status 1</a>
+    <a href="status2.html">Status 2</a>
+    <a href="refleksjon.html" data-no="Refleksjon" data-en="Reflection">Refleksjon</a>
+  </nav>
 
-    <section class="page-hero">
-      <p class="eyebrow">OM MEG</p>
+  <div class="nav-controls">
+    <button id="languageBtn" class="nav-control">EN</button>
+    <button id="themeBtn" class="nav-control theme-btn">☾</button>
+  </div>
 
-      <h1>Hei, jeg heter Aisha</h1>
+</header>
 
-      <p class="page-intro">
-        Jeg er student ved Universitetet i Agder og har stor interesse
-        for IT, design og digitale løsninger.
+<main class="page">
+
+  <section class="page-hero">
+
+    <p class="eyebrow"
+       data-no="OM MEG"
+       data-en="ABOUT ME">
+      OM MEG
+    </p>
+
+    <h1
+      data-no="Hei, jeg heter Aisha"
+      data-en="Hi, my name is Aisha">
+      Hei, jeg heter Aisha
+    </h1>
+
+    <p class="page-intro"
+       data-no="Jeg er student ved Universitetet i Agder og har stor interesse for IT, design og digitale løsninger."
+       data-en="I am a student at the University of Agder with a strong interest in IT, design and digital solutions.">
+      Jeg er student ved Universitetet i Agder.
+    </p>
+
+  </section>
+
+  <section class="about-layout">
+
+    <article class="about-main">
+
+      <h2
+        data-no="Interesser og motivasjon"
+        data-en="Interests and motivation">
+        Interesser og motivasjon
+      </h2>
+
+      <p
+        data-no="Jeg liker spesielt godt å jobbe med design og digitale løsninger. Jeg synes det er spennende å kombinere teknologi og kreativitet og finne løsninger som er enkle og gode å bruke."
+        data-en="I especially enjoy working with design and digital solutions. I find it exciting to combine technology and creativity and create solutions that are simple and easy to use.">
+        Jeg liker spesielt godt å jobbe med design og digitale løsninger.
       </p>
-    </section>
 
-    <section class="about-layout">
+      <p
+        data-no="Gjennom praksisen ønsker jeg å få mer praktisk erfaring og utvikle meg videre både faglig og personlig."
+        data-en="Through the internship I want to gain more practical experience and continue developing both professionally and personally.">
+        Gjennom praksisen ønsker jeg å få mer praktisk erfaring.
+      </p>
 
-      <article class="about-main">
-        <h2>Interesser og motivasjon</h2>
+    </article>
 
-        <p>
-          Jeg liker spesielt godt å jobbe med design og digitale løsninger.
-          Jeg synes det er spennende å kombinere teknologi og kreativitet,
-          og jeg liker å finne løsninger som er enkle, oversiktlige og gode å bruke.
-        </p>
+    <aside class="skills-card">
 
-        <p>
-          Gjennom praksisperioden hos Varodd ønsker jeg å få mer praktisk erfaring,
-          lære hvordan digitale løsninger brukes i en ekte virksomhet og utvikle
-          meg videre både faglig og personlig.
-        </p>
-      </article>
+      <p class="eyebrow"
+         data-no="INTERESSER"
+         data-en="INTERESTS">
+        INTERESSER
+      </p>
 
-      <aside class="skills-card">
-        <p class="eyebrow">INTERESSER</p>
+      <div class="skill-list">
+        <span>IT</span>
+        <span>Webdesign</span>
+        <span>UI / UX</span>
+        <span data-no="Grafisk design" data-en="Graphic design">Grafisk design</span>
+        <span data-no="Digitale løsninger" data-en="Digital solutions">Digitale løsninger</span>
+        <span data-no="Problemløsning" data-en="Problem solving">Problemløsning</span>
+      </div>
 
-        <div class="skill-list">
-          <span>IT</span>
-          <span>Webdesign</span>
-          <span>UI / UX</span>
-          <span>Grafisk design</span>
-          <span>Digitale løsninger</span>
-          <span>Problemløsning</span>
-        </div>
-      </aside>
+    </aside>
 
-    </section>
+  </section>
 
-    <section class="content-grid">
+</main>
 
-      <article class="info-card">
-        <span class="card-number">01</span>
-        <h2>Kreativitet</h2>
-        <p>
-          Jeg liker å jobbe kreativt og prøve forskjellige ideer for å finne
-          løsninger som både ser bra ut og fungerer godt.
-        </p>
-      </article>
+<footer>
+  <p>Aisha · IS-302 · Universitetet i Agder</p>
+</footer>
 
-      <article class="info-card">
-        <span class="card-number">02</span>
-        <h2>Teknologi</h2>
-        <p>
-          Jeg er interessert i hvordan teknologi kan brukes til å forbedre
-          tjenester, arbeidsprosesser og brukeropplevelser.
-        </p>
-      </article>
+<script src="script.js"></script>
 
-      <article class="info-card">
-        <span class="card-number">03</span>
-        <h2>Utvikling</h2>
-        <p>
-          Jeg ønsker å lære nye ting, få mer erfaring og bli bedre på å bruke
-          kunnskapen min i praktiske prosjekter.
-        </p>
-      </article>
-
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Aisha · IS-302 · Universitetet i Agder</p>
-  </footer>
-
-  <script src="script.js"></script>
+</body>
+</html>
 
 </body>
 </html>
