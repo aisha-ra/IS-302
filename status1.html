@@ -1,49 +1,106 @@
-<!DOCTYPE html>
-<html lang="no">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Status 1</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<section class="page-hero">
+  <p class="eyebrow">STATUS 1</p>
 
-<body>
+  <h1>Første status fra praksisperioden</h1>
 
-<header class="navbar">
-
-  <a href="index.html" class="logo">
-    <img src="logo.jpg" alt="Varodd">
-  </a>
-
-  <nav>
-    <a href="index.html" data-no="Hjem" data-en="Home">Hjem</a>
-    <a href="om-varodd.html" data-no="Om Varodd" data-en="About Varodd">Om Varodd</a>
-    <a href="oppgaver.html" data-no="Oppgaver" data-en="Tasks">Oppgaver</a>
-    <a href="om-meg.html" data-no="Om meg" data-en="About me">Om meg</a>
-    <a href="prosjektdagbok.html" data-no="Prosjektdagbok" data-en="Project diary">Prosjektdagbok</a>
-    <a href="status1.html" class="active">Status 1</a>
-    <a href="status2.html">Status 2</a>
-    <a href="refleksjon.html" data-no="Refleksjon" data-en="Reflection">Refleksjon</a>
-  </nav>
-
-  <div class="nav-controls">
-    <button id="languageBtn" class="nav-control">EN</button>
-    <button id="themeBtn" class="nav-control theme-btn">☾</button>
-  </div>
-
-</header>
-
-<main class="soon-page">
-  <h1 data-no="SOON..." data-en="SOON...">SOON...</h1>
-
-  <p
-    data-no="Denne siden kommer snart."
-    data-en="This page is coming soon.">
-    Denne siden kommer snart.
+  <p class="page-intro">
+    Her presenterer jeg litt om Varodd Inkludering, arbeidsoppgavene mine og noen
+    av erfaringene og utfordringene jeg har sett så langt i praksisperioden.
   </p>
-</main>
+</section>
 
-<script src="script.js"></script>
+<section class="content-grid">
 
-</body>
-</html>
+  <article class="info-card">
+    <span class="card-number">01</span>
+
+    <h2>Om Varodd Inkludering</h2>
+
+    <p>
+      Varodd Inkludering er en arbeids- og inkluderingsbedrift som arbeider med å
+      skape muligheter for mennesker i arbeidslivet. De jobber blant annet med
+      oppfølging, kompetanseutvikling, arbeidsinkludering og ulike tjenester og
+      produkter.
+    </p>
+
+    <p>
+      Varodd har også virksomhet innen blant annet kjøkken og bakeri, trykk og
+      profilering og andre arbeidsområder. Det gjør bedriften interessant fordi
+      de kombinerer praktisk arbeid, mennesker, tjenester og digitale løsninger.
+    </p>
+  </article>
+
+  <article class="info-card">
+    <span class="card-number">02</span>
+
+    <h2>Mine arbeidsoppgaver</h2>
+
+    <p>
+      En av hovedoppgavene mine er å se på bestillingsløsningen som brukes av
+      kjøkkenet. Målet er å gjøre informasjonen enklere og mer oversiktlig for
+      de ansatte som skal produsere bestillingene.
+    </p>
+
+    <p>
+      I dagens løsning finnes det mye informasjon om kunden, som navn, adresse,
+      telefonnummer, pris og fakturainformasjon. Kjøkkenet trenger ikke nødvendigvis
+      all denne informasjonen for å lage bestillingen.
+    </p>
+
+    <p>
+      Jeg undersøker derfor en løsning der kjøkkenet kan bruke ordrenummeret som
+      et ticketnummer og kun se informasjon som produkter, antall, leveringstid,
+      eventuelle kommentarer og ordrestatus.
+    </p>
+
+    <p>
+      Jeg kan også få muligheten til å jobbe med grafisk design og profilering
+      knyttet til produkter som klær, kopper og andre tilpassede produkter.
+    </p>
+  </article>
+
+  <article class="info-card">
+    <span class="card-number">03</span>
+
+    <h2>Utfordringer og interessante ting</h2>
+
+    <p>
+      En interessant utfordring er at forskjellige ansatte trenger forskjellig
+      informasjon fra den samme bestillingen.
+    </p>
+
+    <p>
+      De som jobber på kjøkkenet trenger hovedsakelig informasjon om hva som skal
+      lages, hvor mye som skal lages og når bestillingen skal være ferdig.
+      De som skal levere eller utlevere bestillingen trenger derimot navn,
+      adresse, telefonnummer og annen leveringsinformasjon.
+    </p>
+
+    <p>
+      Dette gjør at det kan være nyttig å ha forskjellige visninger for kjøkken,
+      levering og administrasjon, selv om all informasjon kommer fra den samme
+      WooCommerce-ordren.
+    </p>
+  </article>
+
+</section>
+
+<section class="about-layout">
+
+  <article class="about-main">
+    <h2>Hva jeg har lært så langt</h2>
+
+    <p>
+      Jeg har lært at det er viktig å forstå brukernes behov før man begynner å
+      endre en digital løsning. Det som er nyttig for administrasjonen, er ikke
+      nødvendigvis nyttig for de som jobber på kjøkkenet.
+    </p>
+
+    <p>
+      Jeg har også fått bedre forståelse av hvordan WooCommerce brukes i en ekte
+      virksomhet, og hvordan en eksisterende løsning kan forbedres uten å måtte
+      bygge et helt nytt system fra bunnen av.
+    </p>
+  </article>
+
+</section>
