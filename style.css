@@ -917,4 +917,7 @@ body.dark-mode footer {
   .soon-page h1 {
     font-size: 70px;
   }
+  .status2-full {
+  grid-template-columns: 1fr;
+}
 }
