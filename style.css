@@ -23,6 +23,7 @@ body {
     background 0.3s ease;
 }
 
+
 /* =========================
    GLOBAL BACKGROUND
 ========================= */
@@ -49,6 +50,7 @@ body::after {
 
   transition: background 0.3s ease;
 }
+
 
 /* =========================
    NAVBAR
@@ -122,6 +124,7 @@ nav a.active {
   color: #15947f;
 }
 
+
 /* =========================
    NAV CONTROLS
 ========================= */
@@ -171,6 +174,7 @@ nav a.active {
 .theme-btn {
   font-size: 18px;
 }
+
 
 /* =========================
    HOME HERO
@@ -314,6 +318,7 @@ nav a.active {
   }
 }
 
+
 /* =========================
    HOME INTRO
 ========================= */
@@ -359,6 +364,7 @@ nav a.active {
   font-size: 18px;
   line-height: 1.8;
 }
+
 
 /* =========================
    HOME CARDS
@@ -428,6 +434,7 @@ nav a.active {
   line-height: 1.7;
 }
 
+
 /* =========================
    STANDARD PAGES
 ========================= */
@@ -464,6 +471,7 @@ nav a.active {
   font-size: 19px;
   line-height: 1.8;
 }
+
 
 /* =========================
    INFO GRID
@@ -516,6 +524,7 @@ nav a.active {
 
   color: #5d6c7b;
 }
+
 
 /* =========================
    ABOUT ME
@@ -573,6 +582,7 @@ nav a.active {
   font-size: 14px;
   font-weight: 600;
 }
+
 
 /* =========================
    PROJECT DIARY
@@ -656,6 +666,7 @@ nav a.active {
   color: #5d6c7b;
 }
 
+
 /* =========================
    REFLECTION CARDS
 ========================= */
@@ -688,6 +699,7 @@ nav a.active {
 .reflection-card p {
   color: #5d6c7b;
 }
+
 
 /* =========================
    SOON PAGES
@@ -724,6 +736,7 @@ nav a.active {
 
   font-size: 18px;
 }
+
 
 /* =========================
    DARK MODE
@@ -793,6 +806,7 @@ body.dark-mode .soon-page p {
   color: #c7d2df;
 }
 
+
 /* =========================
    FOOTER
 ========================= */
@@ -811,6 +825,7 @@ footer {
 body.dark-mode footer {
   background: #061325;
 }
+
 
 /* =========================
    TABLET
@@ -853,6 +868,7 @@ body.dark-mode footer {
     grid-template-columns: 1fr;
   }
 }
+
 
 /* =========================
    MOBILE
@@ -917,7 +933,13 @@ body.dark-mode footer {
   .soon-page h1 {
     font-size: 70px;
   }
-  .status2-full {
-  grid-template-columns: 1fr;
 }
+
+
+/* =========================
+   STATUS 2 FULL WIDTH
+========================= */
+
+.status2-full {
+  grid-template-columns: 1fr;
 }
