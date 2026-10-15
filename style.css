@@ -1118,6 +1118,13 @@ body.dark-mode .status2-figure figcaption {
     max-height: 520px;
   }
 
+}
+
+
+/* =========================
+   STATUS 2 SINGLE IMAGE BOX
+========================= */
+
 .status2-single-figure {
   margin-top: 30px;
 
@@ -1163,6 +1170,4 @@ body.dark-mode .status2-single-figure img {
 
 body.dark-mode .status2-single-figure figcaption {
   color: #c7d2df;
-}
-  
 }
