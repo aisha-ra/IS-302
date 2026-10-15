@@ -937,9 +937,185 @@ body.dark-mode footer {
 
 
 /* =========================
-   STATUS 2 FULL WIDTH
+   STATUS 2
 ========================= */
 
 .status2-full {
   grid-template-columns: 1fr;
+}
+
+
+/* STATUS 2 PROCESS */
+
+.status2-process {
+  margin-top: 35px;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 14px;
+}
+
+.process-step {
+  padding: 24px 14px;
+
+  background: rgba(244, 248, 251, 0.95);
+
+  border: 1px solid rgba(16, 35, 63, 0.08);
+  border-radius: 16px;
+
+  text-align: center;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 25px rgba(16, 35, 63, 0.1);
+}
+
+.process-step span {
+  width: 42px;
+  height: 42px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #168d79;
+  color: white;
+
+  border-radius: 50%;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.process-step h3 {
+  margin-bottom: 8px;
+
+  color: #10233f;
+
+  font-size: 17px;
+}
+
+.process-step p {
+  margin: 0;
+
+  color: #5d6c7b;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* STATUS 2 IMAGE GALLERY */
+
+.status2-gallery {
+  margin-top: 32px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+.status2-figure {
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid rgba(16, 35, 63, 0.08);
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(16, 35, 63, 0.07);
+}
+
+.status2-figure img {
+  width: 100%;
+  height: 430px;
+
+  display: block;
+
+  object-fit: contain;
+
+  background: #eef3f7;
+}
+
+.status2-figure figcaption {
+  padding: 18px 20px;
+
+  color: #5d6c7b;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* STATUS 2 DARK MODE */
+
+body.dark-mode .process-step {
+  background: rgba(15, 39, 65, 0.95);
+
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .process-step h3 {
+  color: #f0f5fb;
+}
+
+body.dark-mode .process-step p {
+  color: #c7d2df;
+}
+
+body.dark-mode .status2-figure {
+  background: rgba(10, 29, 52, 0.93);
+
+  border-color: rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .status2-figure img {
+  background: #10253d;
+}
+
+body.dark-mode .status2-figure figcaption {
+  color: #c7d2df;
+}
+
+
+/* STATUS 2 TABLET */
+
+@media (max-width: 1120px) {
+
+  .status2-process {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* STATUS 2 MOBILE */
+
+@media (max-width: 650px) {
+
+  .status2-process {
+    grid-template-columns: 1fr;
+  }
+
+  .status2-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .status2-figure img {
+    height: auto;
+    max-height: 520px;
+  }
+
 }
