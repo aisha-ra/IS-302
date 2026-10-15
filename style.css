@@ -1171,3 +1171,29 @@ body.dark-mode .status2-single-figure img {
 body.dark-mode .status2-single-figure figcaption {
   color: #c7d2df;
 }
+
+/* =========================
+   STATUS 2 - CLICK TO ENLARGE
+========================= */
+
+.image-zoom {
+  display: block;
+  cursor: zoom-in;
+}
+
+.image-zoom img {
+  transition: transform 0.2s ease;
+}
+
+.image-zoom:hover img {
+  transform: scale(1.01);
+}
+
+
+/* =========================
+   STATUS 2 - WOO IMAGES VERTICAL
+========================= */
+
+.status2-gallery {
+  grid-template-columns: 1fr;
+}
