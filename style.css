@@ -1249,4 +1249,16 @@ body.dark-mode .interview-caption {
     padding: 16px 18px;
     font-size: 14px;
   }
+
+.page {
+  min-height: calc(100vh - 90px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-layout {
+  width: 100%;
+}
 }
