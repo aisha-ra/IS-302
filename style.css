@@ -1197,3 +1197,56 @@ body.dark-mode .status2-single-figure figcaption {
 .status2-gallery {
   grid-template-columns: 1fr;
 }
+
+/* =========================
+   STATUS 2 - INTERVJU
+========================= */
+
+.status2-interview {
+  margin-top: 30px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(16, 35, 63, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(16, 35, 63, 0.07);
+}
+
+.status2-interview video {
+  width: 100%;
+  max-height: 650px;
+  display: block;
+  background: #000;
+}
+
+.interview-caption {
+  margin: 0;
+  padding: 18px 22px;
+  color: #5d6c7b;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* DARK MODE */
+
+body.dark-mode .status2-interview {
+  background: rgba(10, 29, 52, 0.93);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .interview-caption {
+  color: #c7d2df;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .status2-interview video {
+    max-height: 500px;
+  }
+
+  .interview-caption {
+    padding: 16px 18px;
+    font-size: 14px;
+  }
+}
